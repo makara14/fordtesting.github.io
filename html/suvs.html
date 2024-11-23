@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SUVs</title>
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.0.0/mdb.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../customy-stlye/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="sticky-top">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-body">
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+          <!-- Toggle button -->
+          <button
+            data-mdb-collapse-init
+            class="navbar-toggler text-info font-nav"
+            type="button"
+            data-mdb-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+
+          <!-- Collapsible wrapper -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Navbar brand -->
+            <a class="navbar-brand mt-2 mt-lg-0" href="../index.html">
+              <img
+                src="../asset/img/logoFord.png"
+                height="30"
+                alt="Ford Logo"
+                loading="lazy"
+              />
+            </a>
+            <!-- Left links -->
+
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item drop-model">
+                <a class="nav-link text-info fw-bold font-nav" href="../index.html"
+                  >Vehicles</a
+                >
+
+                <div class="drop-vehicle">
+                  <!-- Cars -->
+
+                  <a class="text-info d-block" href="./cars.html">Cars</a>
+                  <!-- SUVs -->
+                  <a class="text-info d-block" href="./suvs.html">SUVs</a>
+                  <!-- Trucks -->
+                  <a class="text-info d-block" href="./truck.html">Trucks</a>
+                  <!-- Commercial vechicle -->
+                  <a class="text-info d-block" href="./commercial.html"
+                    >Commercial vechicles</a
+                  >
+                </div>
+              </li>
+             
+
+              <li class="nav-item">
+                <a class="nav-link text-info fw-bold font-nav" href="./about.html"
+                  >About Ford</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-info fw-bold font-nav" href="./location.html"
+                  >Location A Dealer</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-info fw-bold font-nav" href="./testdrive.html"
+                  >Test Drive</a
+                >
+              </li>
+            </ul>
+
+            <!-- Left links -->
+          </div>
+          <!-- Collapsible wrapper -->
+
+          <!-- Right elements -->
+          <div class="d-flex align-items-center">
+            <div class="input-group">
+              <div class="form-outline" data-mdb-input-init>
+                <input
+                  id="search-input"
+                  type="search"
+                  id="form1"
+                  class="form-control"
+                />
+                <label class="form-label" for="form1">Search</label>
+              </div>
+              <button id="search-button" type="button" class="btn btn-info">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </div>
+          <!-- Right elements -->
+        </div>
+        <!-- Container wrapper -->
+      </nav>
+      <!-- Navbar -->
+    </header>
+    <!-- Main -->
+    <main class="container shadow">
+      <!-- slid show suvs -->
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-mdb-ride="carousel"
+        data-mdb-carousel-init
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-mdb-target="#carouselExampleCaptions"
+            data-mdb-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-mdb-target="#carouselExampleCaptions"
+            data-mdb-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-mdb-target="#carouselExampleCaptions"
+            data-mdb-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-mdb-target="#carouselExampleCaptions"
+            data-mdb-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="../asset/img/slidSUV-1.jpg"
+              class="d-block w-100"
+              alt="Wild Landscape"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="../asset/img/suvSlide-2.jpg"
+              class="d-block w-100"
+              alt="Camera"
+            />
+            <div class="carousel-caption d-none d-md-block bg-slide">
+              <h5>FORD TERRITORY</h5>
+              <p>The All-New Ford Territory comes with 10-inch touch screen with multi-view function, wireless charging, and more.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="../asset/img/SUVslide-3.jpg"
+              class="d-block w-100"
+              alt="Exotic Fruits"
+            />
+            <div class="carousel-caption d-none d-md-block bg-slide">
+              <h5>FORD EVEREST</h5>
+              <p>
+                Ford Everest’s advanced 2.0L Diesel engine delivers 213PS of power and 500Nm of peak torque, all without compromising fuel efficiency.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="../asset/img/slideSUV-4.jpg"
+              class="d-block w-100"
+              alt="Exotic Fruits"
+            />
+            <div class="carousel-caption d-none d-md-block bg-slide">
+              <h5>FORD EXPLORER</h5>
+              <p>
+                SYNC 3 is voice-activated technology that helps you make hands-free decisions.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-mdb-target="#carouselExampleCaptions"
+          data-mdb-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-mdb-target="#carouselExampleCaptions"
+          data-mdb-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- end slide -->
+       <!-- suv description -->
+        <div>
+          <h1 class="fw-bold border-top mt-2">Ford SUVs</h1>
+          <p>These capable vehicles combine towing capacity with spacious interiors for cargo and passengers (seating for up to eight on select models). And the Mustang® Mach-E® delivers soul-stirring EV power in a beautifully versatile package. Whether you’re seeking familyfocused practicality or exhilarating performance—or both—you’ll find it in a Ford SUV.</p>
+          <a href="#suv"><button class="btn-info btn mb-2">View More</button></a>
+        </div>
+      <!-- view detail all suv -->
+       <div>
+         <h1 class="text-center fw-bold border-top mt-2">View details all SUVs</h1>
+         <div class="row g-2 mb-2">
+            <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 border rounded-4 p-3 hover-shadow">
+                <img
+                  src="../asset/img/bronco-1.jpg"
+                  alt="suv 1"
+                  class="img-fluid"
+                />
+                <div>
+                  <h5 class="mt-2 fw-bold">FORD BRONCO</h5>
+                  <a href="../SUV/bronco.html"><button class="btn-info btn mb-2">Go to BRONCO</button></a>
+               </div>
+            </div>
+            <div id="suv" class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 border rounded-4 p-3 hover-shadow">
+                <img
+                  src="../asset/img/Everest-1.jpg"
+                  alt="suv 1"
+                  class="img-fluid"
+                />
+                <div>
+                   <h5 class="mt-2 fw-bold">FORD EVEREST</h5>
+                   <a href="../SUV/everest.html"><button class="btn-info btn mb-2">Go to EVEREST</button></a>
+                </div>
+            </div>
+            <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 border rounded-4 p-3 hover-shadow">
+                <img
+                  src="../asset/img/explorer-1.jpg"
+                  alt="suv 1"
+                  class="img-fluid"
+                />
+                <div>
+                  <h5 class="mt-2 fw-bold">FORD EXPLORER</h5>
+                  <a href="../SUV/explorer.html"><button class="btn-info btn mb-2">Go to EXPLORER</button></a>
+               </div>
+            </div>
+            <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 border rounded-4 p-3 hover-shadow">
+                <img
+                  src="../asset/img/Territory1.jpg"
+                  alt="suv 1"
+                  class="img-fluid"
+                />
+                <div>
+                  <h5 class="mt-2 fw-bold">FORD TERRITORY</h5>
+                  <a href="../SUV/territory.html"><button class="btn-info btn mb-2">Go to TERRITORY</button></a>
+               </div>
+            </div>
+       </div>
+       </div>
+       <!-- end detail -->
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-dark text-light">
+      <!-- Section: Social media -->
+      <section
+        class="container d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+      >
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+          <span>Get connected with us on social networks:</span>
+        </div>
+        <!-- Left -->
+
+        <!-- Right -->
+        <div>
+          <a
+            href="https://www.facebook.com/FordCambodia/?locale=km_KH"
+            class="me-4 text-reset"
+          >
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a
+            href="https://x.com/i/flow/login?redirect_after_login=%2Frmafordcambodia"
+            class="me-4 text-reset"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="./index.html" class="me-4 text-reset">
+            <i class="fab fa-google"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Ffordcambodia%2F&is_from_rle"
+            class="me-4 text-reset"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://kh.linkedin.com/company/fordcambodia"
+            class="me-4 text-reset"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a
+            href="https://www.youtube.com/@FordCambodiaOfficial"
+            class="me-4 text-reset"
+          >
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Links  -->
+      <section>
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3"></i>FORD CAMBODIA
+              </h6>
+              <p>
+                Ford commonly refers to: Ford Motor Company, an automobile
+                manufacturer founded by Henry Ford; Ford (crossing), a shallow
+                crossing on a river.
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Products</h6>
+              <p>
+                <a href="./cars.html" class="text-reset">Cars</a>
+              </p>
+              <p>
+                <a href="./truck.html" class="text-reset">Trucks</a>
+              </p>
+              <p>
+                <a href="./suvs.html" class="text-reset">Suvs</a>
+              </p>
+              <p>
+                <a href="./commercial.html" class="text-reset">Commercial Vechicles</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">BUILD</h6>
+              <p>
+                <a href="./testdrive.html" class="text-reset">Build your Ford</a>
+              </p>
+             
+              <p>
+                <a href="./testdrive.html" class="text-reset">Request a Test Drive</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">About Ford</h6>
+              <a class="text-reset" href="./about.html">
+              <p>About Ford Cambodia</p>
+              <p>News & Events</p>
+              <p>Career at Ford</p>
+              </a>
+              
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+
+      <!-- Copyright -->
+      <div
+        class="text-center p-4 text-dark"
+        style="background-color: rgb(255, 255, 255)"
+      >
+        © 2024 Copyright :
+        <a class="text-dark fw-bold" href="#">
+          Ford Motor Company Ford  </a
+        >
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    <!-- MDB -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.0.0/mdb.umd.min.js"
+    ></script>
+  </body>
+</html>

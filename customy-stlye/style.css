@@ -1,0 +1,649 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=SUSE:wght@100..800&family=Sixtyfour+Convergence&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+body {
+  font-family: Poppins !important;
+}
+
+.font-nav:hover {
+  font-weight: lighter !important;
+  color: black !important;
+  font-weight: bold !important;
+}
+.drop-vehicle {
+  display: none !important;
+  width: 100% !important;
+  position: absolute !important;
+  background-color: #fff !important;
+  z-index: 1 !important;
+}
+.drop-vehicle a {
+  position: relative;
+  font-weight: bold !important;
+  display: block !important;
+  padding: 10px !important;
+}
+.drop-model:hover .drop-vehicle {
+  display: block !important;
+}
+.drop-vehicle a:hover {
+  display: block !important;
+  text-decoration: underline !important;
+  color: black !important;
+  font-weight: bold !important;
+}
+.btn-zoom {
+  border: none !important;
+  transition: all 0.5s !important;
+}
+.btn-zoom:hover {
+  background-color: #ffffff5b !important;
+  color: rgb(255, 255, 255) !important;
+}
+.mustang-container {
+  background-image: url("../asset/img/Ford-Mustang-Slide.jpg"); /* Replace with your actual image path */
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.mustang-content {
+  background-color: rgba(0, 0, 0, 0.454);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.mustang-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.mustang-button {
+  background-color: #38a9c2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.mustang-button:hover {
+  background-color: #7fcaca50;
+}
+@media (max-width: 1200px) {
+  .mustang-container {
+    height: 50vh;
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .mustang-container {
+    height: 40vh;
+  }
+
+  .mustang-title {
+    font-size: 1.5rem;
+  }
+
+  .mustang-button {
+    font-size: 0.7rem;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .mustang-container {
+    height: 20vh;
+  }
+  .mustang-content {
+    background-color: rgba(0, 0, 0, 0.237);
+  }
+  .mustang-title {
+    font-size: 1rem;
+  }
+
+  .mustang-button {
+    font-size: 0.6rem;
+    padding: 4px 8px;
+  }
+}
+.gallery-container {
+  text-align: center;
+  width: 90%;
+  max-width: 1200px;
+  margin-top: 10px;
+}
+.view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  background-image: url(../asset/img/car1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid rgb(255, 255, 255);
+  box-shadow: 0 0 500px rgb(224, 248, 255);
+  animation: HH 20s linear infinite;
+}
+@keyframes HH {
+  0% {
+    background-image: url(../asset/img/car2.jpg);
+  }
+  4% {
+    background-image: url(../asset/img/car3.jpg);
+  }
+  8% {
+    background-image: url(../asset/img/car4.jpg);
+  }
+  12% {
+    background-image: url(../asset/img/car5.jpg);
+  }
+  16% {
+    background-image: url(../asset/img/car6.jpg);
+  }
+  20% {
+    background-image: url(../asset/img/car7.jpg);
+  }
+  24% {
+    background-image: url(../asset/img/car8.jpg);
+  }
+  26% {
+    background-image: url(../asset/img/car9.jpg);
+  }
+  30% {
+    background-image: url(../asset/img/car10.jpg);
+  }
+  34% {
+    background-image: url(../asset/img/car10.jpg);
+  }
+  38% {
+    background-image: url(../asset/img/car12.jpg);
+  }
+  42% {
+    background-image: url(../asset/img/car13.jpg);
+  }
+  46% {
+    background-image: url(../asset/img/car14.jpg);
+  }
+  50% {
+    background-image: url(../asset/img/car15.jpg);
+  }
+  54% {
+    background-image: url(../asset/img/car16.jpg);
+  }
+  58% {
+    background-image: url(../asset/img/car17.jpg);
+  }
+  62% {
+    background-image: url(../asset/img/car18.jpg);
+  }
+  66% {
+    background-image: url(../asset/img/car19.jpg);
+  }
+  70% {
+    background-image: url(../asset/img/car20.jpg);
+  }
+  74% {
+    background-image: url(../asset/img/car21.jpg);
+  }
+  78% {
+    background-image: url(../asset/img/car22.jpg);
+  }
+  82% {
+    background-image: url(../asset/img/car22.jpg);
+  }
+  86% {
+    background-image: url(../asset/img/car23.jpg);
+  }
+  90% {
+    background-image: url(../asset/img/car24.jpg);
+  }
+  92% {
+    background-image: url(../asset/img/car4.jpg);
+  }
+  96% {
+    background-image: url(../asset/img/car5.jpg);
+  }
+  100% {
+    background-image: url(../asset/img/car6.jpg);
+  }
+}
+@media (max-width: 500px) {
+  .view {
+    height: 30vh;
+    width: 100%;
+  }
+}
+@media (min-width: 500px) and (max-width: 700px) {
+  .view {
+    height: 40vh;
+    width: 100%;
+  }
+}
+@media (min-width: 700px) and (max-width: 1200px) {
+  .view {
+    height: 60vh;
+    width: 100%;
+  }
+}
+
+.bg-slide {
+  background-color: #00000057;
+  border-radius: 20px;
+}
+.bg-request {
+  background-color: #49b4cc;
+  border-radius: 0px;
+  padding: 10px 20px;
+  color: rgb(255, 255, 255);
+  border: none;
+  transition: all 0.5s ease;
+}
+.bg-request:hover {
+  background-color: #2c323400;
+  cursor: pointer;
+  color: black;
+  border: 1px solid black;
+}
+
+.ford-wildruck {
+  background-image: url(../asset/img/ford-wildrack.jpg);
+  height: 70vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ford-content .wildruck-btn {
+  background-color: rgba(29, 224, 231, 0.726);
+  border-radius: 5px;
+  border: 1px solid white;
+  color: white;
+  padding: 10px 20px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.ford-content .wildruck-btn:hover {
+  background-color: rgba(0, 0, 0, 0.299);
+}
+@media (max-width: 576px) {
+  .ford-wildruck {
+    height: 20vh;
+  }
+  .ford-content.wildruck-btn {
+    font-size: 0.6rem;
+    padding: 5px;
+  }
+}
+@media (max-width: 756px) {
+  .ford-wildruck {
+    height: 35vh;
+  }
+}
+@media (max-width: 900px) {
+  .ford-wildruck {
+    height: 45vh;
+  }
+}
+@media (max-width: 1200px) {
+  .ford-wildruck {
+    height: 60vh;
+  }
+}
+@media (min-width: 1200px) {
+  .ford-wildruck {
+    height: 70vh;
+  }
+}
+.disclosure-section {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.disclosure-title {
+  font-weight: bold;
+  color: #4a4a4a;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+.disclosure-content {
+  color: #555;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.view-Territory {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  background-image: url(../asset/media/download.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid rgb(255, 255, 255);
+  box-shadow: 0 0 500px rgb(222, 227, 228);
+  animation: TT 10s linear infinite;
+}
+@keyframes TT {
+  0% {
+    background-image: url(../asset/media/download1.png);
+  }
+  5% {
+    background-image: url(../asset/media/download2.png);
+  }
+  10% {
+    background-image: url(../asset/media/download\ 3.png);
+  }
+  15% {
+    background-image: url(../asset/media/download\ 4.png);
+  }
+  20% {
+    background-image: url(../asset/media/download\ 5.png);
+  }
+  25% {
+    background-image: url(../asset/media/download\ 6.png);
+  }
+  30% {
+    background-image: url(../asset/media/download\ 7.png);
+  }
+  35% {
+    background-image: url(../asset/media/download8.png);
+  }
+
+  40% {
+    background-image: url(../asset/media/download\ 9.png);
+  }
+  45% {
+    background-image: url(../asset/media/download10.png);
+  }
+  50% {
+    background-image: url(../asset/media/download\ 11.png);
+  }
+  55% {
+    background-image: url(../asset/media/download\ 12.png);
+  }
+  60% {
+    background-image: url(../asset/media/download\ 13.png);
+  }
+  65% {
+    background-image: url(../asset/media/download\ 14.png);
+  }
+  70% {
+    background-image: url(../asset/media/download\ 15.png);
+  }
+  75% {
+    background-image: url(../asset/media/download16.png);
+  }
+  80% {
+    background-image: url(../asset/media/download17.png);
+  }
+  85% {
+    background-image: url(../asset/media/download18.png);
+  }
+  90% {
+    background-image: url(../asset/media/download\ 19.png);
+  }
+  95% {
+    background-image: url(../asset/media/download\ 19.png);
+  }
+  100% {
+    background-image: url(../asset/media/download\ 19.png);
+  }
+}
+@media (max-width: 476px) {
+  .view-Territory {
+    height: 20vh;
+  }
+  .GT-driving {
+    display: flex;
+    height: 20vh;
+  }
+}
+@media (min-width: 476px) and (max-width: 576px) {
+  .view-Territory {
+    height: 25vh;
+  }
+}
+@media (min-width: 576px) and (max-width: 756px) {
+  .view-Territory {
+    height: 30vh;
+  }
+}
+@media (min-width: 756px) and (max-width: 900px) {
+  .view-Territory {
+    height: 40vh;
+  }
+}
+@media (min-width: 900px) and (max-width: 1200px) {
+  .view-Territory {
+    height: 50vh;
+  }
+}
+@media (min-width: 1200px) {
+  .view-Territory {
+    height: 60vh;
+  }
+}
+.GT-driving {
+  display: flex !important;
+  height: 75vh;
+}
+.view-transit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  background-image: url(../asset/img-transit-360/1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid rgb(255, 255, 255);
+  box-shadow: 0 0 500px rgb(222, 227, 228);
+  animation: Transit 10s linear infinite;
+}
+@keyframes Transit {
+  0% {
+    background-image: url(../asset/img-transit-360/1.jpg);
+  }
+  3% {
+    background-image: url(../asset/img-transit-360/2.jpg);
+  }
+  6% {
+    background-image: url(../asset/img-transit-360/3.jpg);
+  }
+  9% {
+    background-image: url(../asset/img-transit-360/4.jpg);
+  }
+  12% {
+    background-image: url(../asset/img-transit-360/5.jpg);
+  }
+  15% {
+    background-image: url(../asset/img-transit-360/6.jpg);
+  }
+  18% {
+    background-image: url(../asset/img-transit-360/7.jpg);
+  }
+  21% {
+    background-image: url(../asset/img-transit-360/8.jpg);
+  }
+  23% {
+    background-image: url(../asset/img-transit-360/9.jpg);
+  }
+  26% {
+    background-image: url(../asset/img-transit-360/10.jpg);
+  }
+  29% {
+    background-image: url(../asset/img-transit-360/11.jpg);
+  }
+  32% {
+    background-image: url(../asset/img-transit-360/13.jpg);
+  }
+  35% {
+    background-image: url(../asset/img-transit-360/14.jpg);
+  }
+  38% {
+    background-image: url(../asset/img-transit-360/15.jpg);
+  }
+  41% {
+    background-image: url(../asset/img-transit-360/16.jpg);
+  }
+  44% {
+    background-image: url(../asset/img-transit-360/17.jpg);
+  }
+  48% {
+    background-image: url(../asset/img-transit-360/18.jpg);
+  }
+  51% {
+    background-image: url(../asset/img-transit-360/19.jpg);
+  }
+  54% {
+    background-image: url(../asset/img-transit-360/20.jpg);
+  }
+  57% {
+    background-image: url(../asset/img-transit-360/21.jpg);
+  }
+  60% {
+    background-image: url(../asset/img-transit-360/22.jpg);
+  }
+  63% {
+    background-image: url(../asset/img-transit-360/23.jpg);
+  }
+  66% {
+    background-image: url(../asset/img-transit-360/24.jpg);
+  }
+  69% {
+    background-image: url(../asset/img-transit-360/25.jpg);
+  }
+  72% {
+    background-image: url(../asset/img-transit-360/26.jpg);
+  }
+  76% {
+    background-image: url(../asset/img-transit-360/27.jpg);
+  }
+  79% {
+    background-image: url(../asset/img-transit-360/28.jpg);
+  }
+  82% {
+    background-image: url(../asset/img-transit-360/29.jpg);
+  }
+  86% {
+    background-image: url(../asset/img-transit-360/30.jpg);
+  }
+  89% {
+    background-image: url(../asset/img-transit-360/40.jpg);
+  }
+  92% {
+    background-image: url(../asset/img-transit-360/50.jpg);
+  }
+  95% {
+    background-image: url(../asset/img-transit-360/60.jpg);
+  }
+  97% {
+    background-image: url(../asset/img-transit-360/70.jpg);
+  }
+  100% {
+    background-image: url(../asset/img-transit-360/80.jpg);
+  }
+}
+@media (max-width: 476px) {
+  .view-transit {
+    height: 20vh;
+  }
+}
+@media (min-width: 476px) and (max-width: 576px) {
+  .view-transit {
+    height: 25vh;
+  }
+}
+@media (min-width: 576px) and (max-width: 756px) {
+  .view-transit {
+    height: 30vh;
+  }
+}
+@media (min-width: 756px) and (max-width: 900px) {
+  .view-transit {
+    height: 35vh;
+  }
+}
+@media (min-width: 900px) and (max-width: 1200px) {
+  .view-transit {
+    height: 50vh;
+  }
+}
+@media (min-width: 1200px) {
+  .view-transit {
+    height: 60vh;
+  }
+}
+@media (max-width: 500px) {
+  .change-color {
+    padding: 20px !important;
+  }
+  .change-color-raptor {
+    padding: 15px !important;
+  }
+}
+@media (max-width: 400px) {
+  .change-color-raptor {
+    padding: 10px !important;
+  }
+}
+@media (max-width: 300px) {
+  .change-color {
+    padding: 15px !important;
+    border: none !important;
+    box-shadow: 0 0 1px 1px black !important;
+  }
+  .change-color-raptor {
+    padding: 7px !important;
+  }
+}
+.bg-raptor {
+  background-color: darkred !important;
+}
+.bg-raptor-last {
+  background-color: black !important;
+}
+
+@media (max-width: 300px) {
+  .mustang-video {
+    width: 250px;
+    height: 200px;
+  }
+}
+@media (min-width: 300px) and (max-width: 430px) {
+  .mustang-video {
+    width: 400px;
+    height: 340px;
+  }
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin-top: 20px !important;
+}
+.group-form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+input, select {
+  margin-bottom: 10px;
+}
+select{
+  padding: 7px;
+}
